@@ -4,7 +4,7 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <script>
-function launchApp(){
+
 	
 	window.location = "com.mopar.ownersapp.chrysler://";
 	var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
@@ -17,16 +17,13 @@ function launchApp(){
       alert('other device');
       window.location='http://facebook.com';
     }
-}
+
 
 </script>
 
 
 </head>
 <body >
-<a id="launch" href="" onclick="launchApp()">LaunchMobileApp</a>
-<input type=hidden id='brand'/>
-<input type=hidden id='deviceType'/>
 
 </body>
 </html>
