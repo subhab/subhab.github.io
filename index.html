@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function launchApp(){
+	
+	window.location = "com.mopar.ownersapp.chrysler://";
+	var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+    if (isAndroid)
+    {
+      //alert('android');
+      window.location='market://details?id=com.chrysler.vehicleinfo.jeep';
+    }
+    else{
+      alert('other device');
+    }
+}
+
+</script>
+
+
+</head>
+<body >
+<a id="launch" href="" onclick="launchApp()">LaunchMobileApp</a>
+<input type=hidden id='brand'/>
+<input type=hidden id='deviceType'/>
+
+</body>
+</html>
