@@ -4,7 +4,6 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <script>
-
 	
 	window.location = "com.mopar.ownersapp.chrysler://";
 	var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
@@ -13,13 +12,10 @@
     {
       alert('android');
       window.location='market://details?id=com.chrysler.vehicleinfo.jeep';
-    }
-    else{
+    }else if(isiPhone)   {
       alert('iPhone');
       window.location='https://play.google.com/store/apps/details?id=com.chrysler.vehicleinfo.jeep&hl=en';
     }
-
-
 </script>
 
 
