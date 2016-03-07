@@ -8,14 +8,15 @@
 	
 	window.location = "com.mopar.ownersapp.chrysler://";
 	var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+	var isiPhone = /iphone/i.test(navigator.userAgent.toLowerCase());
     if (isAndroid)
     {
       //alert('android');
       window.location='market://details?id=com.chrysler.vehicleinfo.jeep';
     }
     else{
-      alert('other device');
-      window.location='https://www.facebook.com/praveengandhi.p';
+      alert('iPhone');
+      window.location='https://play.google.com/store/apps/details?id=com.chrysler.vehicleinfo.jeep&hl=en';
     }
 
 
